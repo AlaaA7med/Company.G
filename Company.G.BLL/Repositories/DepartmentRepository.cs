@@ -9,12 +9,12 @@ using Company.G.DAL.Models;
 
 namespace Company.G.BLL.Repositories
 {
-    internal class DepartmentRepository : IDepartmentRepository
+    public class DepartmentRepository : IDepartmentRepository
     {
         private readonly CompanyDbContext _context;
-        public DepartmentRepository()
+        public DepartmentRepository(CompanyDbContext context)
         {
-            _context = new CompanyDbContext();
+            _context = context;
             
         }
 
