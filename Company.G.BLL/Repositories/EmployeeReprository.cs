@@ -9,9 +9,9 @@ using Company.G.DAL.Models;
 
 namespace Company.G.BLL.Repositories
 {
-    public class DepartmentRepository : GenericRepository<Department>,IDepartmentRepository
+    public class EmployeeReprository : GenericRepository<Employee>, IEmployeeReprository
     {
-        public DepartmentRepository(CompanyDbContext context ):base(context)
+        public EmployeeReprository(CompanyDbContext context):base(context)
         {
             
         }
